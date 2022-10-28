@@ -1,0 +1,7 @@
+[
+ {
+  "path": "/packages/peripherals/sensors/lsm6dsl", 
+  "ver": "latest", 
+  "name": "LSM6DSL"
+ }
+]
