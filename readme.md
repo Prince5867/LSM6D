@@ -1,1 +1,1 @@
-The graduate sign of Master Degree
+The Graduation project of Master Degree
