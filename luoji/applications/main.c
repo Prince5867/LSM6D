@@ -11,22 +11,18 @@
 #include <rtthread.h>
 #include <rtdevice.h>
 #include "drv_common.h"
+#include "lsm.h"
 
-#define LED_PIN GET_PIN(I, 8)
 
 int main(void)
 {
-    rt_uint32_t count = 1;
 
-    rt_pin_mode(LED_PIN, PIN_MODE_OUTPUT);
+    /*Lsm_Init_iic();
+    while(1){
 
-    while(count++)
-    {
-        rt_thread_mdelay(500);
-        rt_pin_write(LED_PIN, PIN_HIGH);
-        rt_thread_mdelay(500);
-        rt_pin_write(LED_PIN, PIN_LOW);
-    }
+        Lsm_Get_Rawacc();
+        rt_thread_mdelay(1);
+    }*/
     return RT_EOK;
 }
 

@@ -95,9 +95,8 @@
 #define RT_SERIAL_USING_DMA
 #define RT_SERIAL_RB_BUFSZ 64
 #define RT_USING_HWTIMER
-#define RT_USING_I2C
-#define RT_USING_I2C_BITOPS
 #define RT_USING_PIN
+#define RT_USING_ADC
 #define RT_USING_PWM
 #define RT_USING_MTD_NOR
 #define RT_USING_SPI
@@ -105,8 +104,6 @@
 #define RT_SFUD_USING_SFDP
 #define RT_SFUD_USING_FLASH_INFO_TABLE
 #define RT_SFUD_SPI_MAX_HZ 50000000
-#define RT_USING_SENSOR
-#define RT_USING_SENSOR_CMD
 
 /* Using USB */
 
@@ -214,12 +211,13 @@
 
 /* peripheral libraries and drivers */
 
-#define PKG_USING_SENSORS_DRIVERS
-#define PKG_USING_LSM6DSL
-#define PKG_USING_LSM6DSL_ACCE
-#define PKG_USING_LSM6DSL_GYRO
-#define PKG_USING_LSM6DSL_STEP
-#define PKG_USING_LSM6DSL_LATEST_VERSION
+/* sensors drivers */
+
+/* end of sensors drivers */
+
+/* touch drivers */
+
+/* end of touch drivers */
 
 /* Kendryte SDK */
 
@@ -308,18 +306,10 @@
 #define BSP_USING_GPIO
 #define BSP_USING_UART
 #define BSP_USING_UART4
-#define BSP_USING_I2C
-#define BSP_USING_I2C2
-
-/* Notice: PH13 --> 125; PH15 --> 127 */
-
-#define BSP_I2C2_SCL_PIN 127
-#define BSP_I2C2_SDA_PIN 125
 #define BSP_USING_SDRAM
 #define BSP_USING_PWM
 #define BSP_USING_PWM5
 #define BSP_USING_PWM5_CH1
-#define SAMPLES_USING_PWM
 /* end of On-chip Peripheral */
 /* end of Hardware Drivers Config */
 
