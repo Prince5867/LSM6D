@@ -23,11 +23,11 @@ static void sensor_sample()
     rt_size_t i;
     int acc_data[3];
     Idle_list=createList();
-    Lsm_Init_iic();
-
-    for (i = 0; i < 20000; i++)
+    Lsm_Init_spi();
+    rt_thread_mdelay(100);
+    for (i = 0; i < 200000; i++)
     {
-        Lsm_Get_Rawacc(acc_data,3);
+        Lsm_Get_RawAcc(acc_data,3);
         data.data[0]=acc_data[0];
         data.data[1]=acc_data[1];
         data.data[2]=acc_data[2];

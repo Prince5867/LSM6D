@@ -21,8 +21,7 @@ extern "C"
 #endif
 
 /*-------------------------- CHIP CONFIG BEGIN --------------------------*/
-#define BSP_USING_ADC
-#define BSP_USING_ADC1
+
 #define CHIP_FAMILY_STM32
 #define CHIP_SERIES_STM32H7
 #define CHIP_NAME_STM32H750XBHX

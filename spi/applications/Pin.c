@@ -15,7 +15,7 @@
 struct rt_device_pwm *pwm_dev;
 /*PWM²ÎÊıÉèÖÃ*/
 rt_uint32_t period = 500000;
-int pulse=200000;
+int pulse=150000;
 unsigned int  flag=0;
 void pwm_inc_callback(void *args)
 {

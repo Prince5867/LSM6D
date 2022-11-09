@@ -64,7 +64,7 @@ static void adc_thread_entry(void *parameter)
 }
 static int adc_init()
 {
-    adc_thread = rt_thread_create("adc_thread",adc_thread_entry,RT_NULL,512,10,10);
+    adc_thread = rt_thread_create("adc_thread",adc_thread_entry,RT_NULL,512,10,1);
   if (adc_thread != RT_NULL)
     {
         rt_thread_startup(adc_thread);
@@ -73,6 +73,6 @@ static int adc_init()
     sem2=rt_sem_create("sem2", 0, RT_IPC_FLAG_FIFO);
     return RT_EOK;
 }
-INIT_APP_EXPORT(adc_init);
+//INIT_APP_EXPORT(adc_init);
 
 

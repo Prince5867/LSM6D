@@ -11,17 +11,17 @@
 #include <rtthread.h>
 #include <rtdevice.h>
 #include "drv_common.h"
-#include "lsm.h"
+//#include "lsm.h"
 
 
 int main(void)
 {
-
-    /*Lsm_Init_iic();
-    while(1){
-
-        Lsm_Get_Rawacc();
-        rt_thread_mdelay(1);
+/*    Lsm_Init_spi();
+    rt_thread_mdelay(10);
+    rt_kprintf("init suc1111\n");
+    for(int i=0 ; i<10000 ; i++)
+    {
+        Lsm_Get_RawAcc();
     }*/
     return RT_EOK;
 }
