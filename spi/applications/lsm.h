@@ -156,10 +156,9 @@ typedef enum
   USE_I2C = 1
 }io_device;
 /******USE IIC MODEL****/
-void Lsm_Init_iic(void);
-void Lsm_Get_Rawacc(int AccData[],int size);
+
 void Lsm_Init_spi(void);
-void Lsm_Get_RawAcc(int AccData[],int size);
+rt_uint8_t  Lsm_Get_RawAcc(int AccData[],int size);
 
 #endif
 
